@@ -1,0 +1,30 @@
+using UnityEngine;
+
+public class CubeController : MonoBehaviour
+{
+    public float moveSpeed = 30f;
+    public float rotationSpeed = 0f;
+
+    void Update()
+    {
+        // === Movement ===
+        float moveX = 0f;
+        float moveZ = 0f;
+
+        if (Input.GetKey(KeyCode.UpArrow))
+            moveZ = 1f;
+        if (Input.GetKey(KeyCode.DownArrow))
+            moveZ = -1f;
+        if (Input.GetKey(KeyCode.LeftArrow))
+            moveX = -1f;
+        if (Input.GetKey(KeyCode.RightArrow))
+            moveX = 1f;
+
+        Vector3 move = new Vector3(moveX, 0f, moveZ).normalized * moveSpeed * Time.deltaTime;
+        transform.Translate(move, Space.World);
+
+        // === Optional rotation ===
+        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+    }
+}
+
