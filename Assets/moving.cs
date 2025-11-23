@@ -7,7 +7,6 @@ public class CubeController : MonoBehaviour
 
     void Update()
     {
-        // === Movement ===
         float moveX = 0f;
         float moveZ = 0f;
 
@@ -23,7 +22,6 @@ public class CubeController : MonoBehaviour
         Vector3 move = new Vector3(moveX, 0f, moveZ).normalized * moveSpeed * Time.deltaTime;
         transform.Translate(move, Space.World);
 
-        // === Optional rotation ===
         transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
     }
 }
