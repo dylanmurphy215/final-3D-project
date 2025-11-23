@@ -1,11 +1,11 @@
 # final-3D-project
 Game Name: 
 
-Group Members:
+Group Members: Amelia Grevin, Dylan Murphy, Sonia 
 
-Current Target for Game:
+Current Target for Game: 
 
-Goals:
+Goals: 
 
 Amelia - 
 
