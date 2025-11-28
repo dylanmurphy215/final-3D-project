@@ -11,13 +11,13 @@ public class CubeController : MonoBehaviour
         float moveZ = 0f;
 
         if (Input.GetKey(KeyCode.UpArrow))
-            moveZ = 1f;
-        if (Input.GetKey(KeyCode.DownArrow))
-            moveZ = -1f;
-        if (Input.GetKey(KeyCode.LeftArrow))
             moveX = -1f;
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.DownArrow))
             moveX = 1f;
+        if (Input.GetKey(KeyCode.LeftArrow))
+            moveZ = -1f;
+        if (Input.GetKey(KeyCode.RightArrow))
+            moveZ = 1f;
 
         Vector3 move = new Vector3(moveX, 0f, moveZ).normalized * moveSpeed * Time.deltaTime;
         transform.Translate(move, Space.World);

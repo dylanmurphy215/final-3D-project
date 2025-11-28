@@ -352,6 +352,7 @@
 -analyzer:"/Applications/Unity/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/cameraFollow.cs"
 "Assets/moving.cs"
+"Assets/SpiderRun.cs"
 -langversion:9.0
 
 /deterministic
